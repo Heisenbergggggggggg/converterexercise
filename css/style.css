@@ -12,11 +12,22 @@ h1 {
 .container {
     height: 100vh;
     width: 100%;
+
+    padding: 20px;
 }
 
 
-body {
+.contentbox {
+    background-color: rgb(248, 248, 248);
+    padding:30px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(../css/Qk5yb2.jpg);
+}
+
+body {
+    background-image: url(../css/money.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -30,11 +41,11 @@ body {
     box-shadow: 0 4px 4px 0  rgba(32, 138, 55, 0.75); 
     background: linear-gradient(to bottom, #2a6e53, #28a78e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     margin-left: 20px;
+    margin-bottom: 10px;
     border-color: var(--color-brand);
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
-    margin-bottom: 20px;
-    margin-left: 10px;
+   
     font-size: 18px;
 }
 
@@ -45,7 +56,17 @@ body {
     color: rgb(252, 252, 252);
 }
 
-p, label{
+ #converted{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(194, 26, 51);
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 25px; 
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+ #unit{
     font-family: 'Oswald', sans-serif;
     color: rgb(194, 26, 51);
     margin-bottom: 20px;
@@ -56,6 +77,7 @@ p, label{
 
 label, .firstNum {
     color: blue;
+    font-size: 20px;
     
 }
 

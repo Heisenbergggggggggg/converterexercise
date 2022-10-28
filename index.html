@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple Converter</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,25 +22,28 @@
     <div
       class="container border d-flex justify-content-center align-items-center"
     >
-      <div class="row d-flex justify-content-center">
-        <div class="col">
-          <h1>Currency Converter</h1>
-          <form action="#" method="#">
-            <label for="firstNum">Philippine Peso (Php): </label>
-            <input type="number" id="firstNum" placeholder="Input Amount" />
+      <div class="contentbox">
+        <div class="row d-flex justify-content-center">
+          <div class="col">
+            <h1>Currency Converter</h1>
+            <form action="#" method="#">
+              <label for="firstNum">Philippine Peso (Php): </label>
+              <input type="number" id="firstNum" placeholder="Input Amount" />
 
-            <button class="btn" type="submit" onclick="convert()">
-              US Dollar
-            </button>
-            <button class="btn" type="submit" onclick="convert1()">
-              Japanese Yen
-            </button>
-            <button class="btn" type="submit" onclick="convert2()">
-              South Korean Won
-            </button>
-            <p><i class="fa-solid fa-arrows-up-down icon"></i></p>
-            <p><span id="converted"></span> <span id="unit"> </span></p>
-          </form>
+              <button class="btn" type="submit" onclick="convert()">
+                <i class="fa-solid fa-dollar-sign"></i> US Dollar
+              </button>
+              <button class="btn" type="submit" onclick="convert1()">
+                <i class="fa-solid fa-yen-sign"></i> Japanese Yen
+              </button>
+              <button class="btn" type="submit" onclick="convert2()">
+                <i class="fa-solid fa-won-sign"></i> South Korean Won
+              </button>
+              <p><i class="fa-solid fa-arrows-up-down icon"></i></p>
+              <span id="converted">0</span>
+              <span id="unit">USD</span>
+            </form>
+          </div>
         </div>
       </div>
     </div>
